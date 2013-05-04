@@ -1,0 +1,18 @@
+h1#name {
+  height: 4em;
+  padding-top: 2em;
+  padding-left: 2em;
+  background-repeat: no-repeat;
+  color: yellow; }
+
+body#government h1#name {
+  background-image: url(../images/government.png);
+  color: green; }
+
+body#residential h1#name {
+  background-image: url(../images/residential.png);
+  color: darkblue; }
+
+body#business h1#name {
+  background-image: url(../images/business.png);
+  color: #663300; }
