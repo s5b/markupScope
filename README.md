@@ -1,15 +1,21 @@
 Markup Scope for Testing and Styling
 ===========
 
-Scoping elements with id for styling and testing.
+An exploration of identifying elements with 'id' for styling and separately for testing.
 
-This is a small project to test the effects of styling elements with an id in a broader context.
+This is a small project to test the effects of styling elements with an 'id' in a broader context. It is aimed at a better understanding of the specificity rules associated with CSS, and the targeting of elements for testing purposes.
 
-This idea come up from a discussion about using id as a mechanism for locating elements within a document for testing, yet wanting to style those elements differently depending on the context.
+This idea come up from a discussion about using 'id' as a mechanism for locating elements within a document for testing, yet wanting to style those elements differently depending on the presentation context within which the element is used.
 
-That is, the elements have a semantic meaning based on the id of the element, yet the presentation of the element varies depending on the context within which the element is used. In this example, the page is providing listing of a named entity, so all tests want to identify the name of the entity. But the styling is different for each entity based on its type.
+That is, the elements have a semantic meaning based on the 'id' of the element, yet the presentation of the element varies depending on the context within which the element is used. In this example, the page is providing a listing of a named entity, so all tests want to identify the name of the entity. But the styling is different for each entity based on its _kind_.
 
-This idea is based on the approach Modernizr (http://modernizr.com)
+This idea is based on the approach Modernizr (http://modernizr.com) uses for coding browser capability through the addition of element classes to the 'html' element of the page.
+
+Approach
+--------
+
+The approach has been to use a specific 'id' to identify the _name_ element in the markup, which can be used for testing purposes. Then a separate 'id' is applied to the 'body' element of the page to contain the _kind_. This arrangement then allows for specific targeting of the styling for the
+name containing element using appropriate CSS styling.
 
 Implementation
 --------------
